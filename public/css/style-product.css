@@ -1,0 +1,210 @@
+/* Reset Code */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-prod {
+    text-align: center;
+
+}
+
+.title-prod h3 {
+    margin: 40px;
+    font-size: 44px;
+}
+
+.wrap {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta-wrap {
+    padding: 30px;
+    perspective: 800;
+    -webkit-perspective: 800;
+    -o-perspective: 800;
+    -ms-perspective: 800;
+    -moz-perspective: 800;
+}
+
+.tarjeta {
+    width: 240px;
+    height: 240px;
+    background: #ffff;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.adelante,
+.atras {
+    border-style: solid;
+    border-color: #FCF7F7;
+    border-width: 1px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.atras {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    background: #FCF7F7;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.adelante {
+    width: 100%;
+}
+
+.card1 {
+    background: url(../images/productos/201.jpg) center no-repeat;
+}
+
+.card2 {
+    background: url(../images/productos/201-ET-SS_Odis.jpg) center;
+}
+
+.card3 {
+    background: url(../images/productos/1P_dobbermanns.png) center;
+}
+
+.card4 {
+    background: url(../images/productos/1Y_dobbermanns2.png) center;
+}
+
+.card5 {
+    background: url(../images/productos/KW1_dobbermanns.png) center;
+}
+
+.card6 {
+    background: url(../images/productos/K20F_cmg.png) center;
+}
+
+.card7 {
+    background: url(../images/productos/2-A_cmg.png) center;
+}
+
+.card8 {
+    background: url(../images/productos/3_dobbermanns.png) center;
+}
+
+.card9 {
+    background: url(../images/productos/9_cmg.png) center;
+}
+
+.card10 {
+    background: url(../images/productos/1_cmg.png) center;
+}
+
+.card11 {
+    background: url(../images/productos/1S_cmg2.png) center;
+
+}
+
+.card12 {
+    background: url(../images/productos/distintivos.jpg) center;
+}
+
+.card13 {
+    background: url(../images/productos/6070-ZK_Scanavini.jpg) center;
+}
+
+.card14 {
+    background: url(../images/productos/AA40-AI_Andeslock.jpg) center;
+}
+
+.card15 {
+    background: url(../images/productos/cilindros-para-cerraduras.png) center;
+}
+
+
+/*Carta atrás*/
+h5.title-card a,
+h5.title-card {
+    padding-bottom: 5%;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.sub-title {
+    font-size: 13px;
+    padding-bottom: 5%;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body p {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.cont {
+    margin-bottom: 5px;
+}
+
+
+/*Responsive*/
+
+@media(max-width: 414px) {
+    .tarjeta-wrap {
+        padding-left: 7em;
+        perspective: 800;
+        -webkit-perspective: 800;
+        -o-perspective: 800;
+        -ms-perspective: 800;
+        -moz-perspective: 800;
+    }
+
+    .title-prod h3 {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    .tarjeta {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8 {
+        background-size: 200px 200px;
+    }
+
+    .card9,
+    .card10,
+    .card11,
+    .card12,
+    .card13,
+    .card14,
+    .card15 {
+        background-size: 200px 200px;
+    }
+}
